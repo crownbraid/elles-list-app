@@ -26,6 +26,10 @@ a:hover, a:focus {
 	opacity: 1;
 }
 
+#submit {
+	display: none;
+}
+
 .container { 
 	background-image: url('../images/paper.png');
 	background-size: cover;
@@ -80,8 +84,17 @@ input[type="text"]
     border: none;
 	font-size: 2em;
 	font-weight: 300;
-	padding: 0 0 0.5em;
+	padding: 0 0 0.5em 2.2em;
 	margin: 0 0 30px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#submit {
+	background: transparent;
+    border: none !important;
 }
 
 @media screen and (max-width: 25em) {
