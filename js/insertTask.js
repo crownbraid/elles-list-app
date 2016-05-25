@@ -13,7 +13,7 @@ $(function() {
 var num = 1;
 
 function htmlWrite(input) {
-	var html = '<li class="erasable"><input id="cb' + num;
+	var html = '<li><input id="cb' + num;
 	html += '" name="cb' + num;
 	html += '" type="checkbox"><label for="cb' + num;
 	html += '"><span>' + input;

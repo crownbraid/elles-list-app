@@ -7,18 +7,10 @@ var erase = 0;
 function eraseState() {
 	if (erase == 0) {
 		cursorSet();
-		erase++;} 
-	else {
+		erase++;
+	} else {
 		$('body').css('cursor','default');
 		erase--;
-	}
-}
-
-function eraseTask() {
-	if (erase == 1) {
-		$(this).parent().remove();
-		console.log($(this));
-		$('#newInput').show();
 	}
 }
 
