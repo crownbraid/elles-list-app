@@ -27,7 +27,7 @@ function controlCheckbox( el, type, svgDef ) {
 	var svg = createSVGEl( svgDef );
 	el.parentNode.appendChild( svg );
 	el.parentNode.addEventListener('mouseenter', cursorFix);
-	el.addEventListener('click', eraseTask);	
+	el.parentNode.addEventListener('click', eraseOrDraw);
 	el.addEventListener('change', function() {
 		if ( el.checked ) {
 			draw( el, type );
@@ -38,10 +38,12 @@ function controlCheckbox( el, type, svgDef ) {
 	} );
 }
 
-function eraseTask() {
+function eraseOrDraw() {
 	if (erase == 1) {
-		$(this).parent().remove();
+		$(this).remove();
 		$('#newInput').show();
+	} else {
+		$(this).children().click();
 	}
 }
 
