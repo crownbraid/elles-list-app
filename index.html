@@ -4,22 +4,20 @@
 		<meta charset="UTF-8" />
 		<title>Elle's List App</title>
 		<link href='https://fonts.googleapis.com/css?family=Cedarville+Cursive' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<script src="js/jquery-2.2.3.js"></script>
-		<script src="js/script.js"></script>
 	</head>
 	<body>
 		<div class="container">
 			<section>
+				<div class ="erase">
+					<img src="images/eraser.png" height="100%">
+				</div>
 				<form class="ac-custom ac-list" autocomplete="off">
 					<ol>
 						<div id="items">
-							<li><input id="cb1" name="cb1" type="checkbox"><label for="cb1"><span>First Placeholder</span></label></li>
-							<li><input id="cb2" name="cb2" type="checkbox"><label for="cb2"><span>Second Placeholder</span></label></li>
-							<li><input id="cb3" name="cb3" type="checkbox"><label for="cb3"><span>Third Placeholder</span></label></li>
-							<li><input id="cb4" name="cb4" type="checkbox"><label for="cb4"><span>Fourth Placeholder</span></label></li>
 						</div>
 						<form id="newTask">
 							<input type="text" id="newInput" class="text" maxlength="30" autocomplete="off" placeholder="add a task" required/>
@@ -28,6 +26,8 @@
 				</form>
 			</section>
 		</div>
+		<script src="js/erase.js"></script>
 		<script src="js/svgcheckbx.js"></script>
+		<script src="js/insertTask.js"></script>
 	</body>
 </html>

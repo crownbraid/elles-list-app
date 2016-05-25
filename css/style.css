@@ -32,9 +32,11 @@ a:hover, a:focus {
 
 .container { 
 	background-image: url('../images/paper.png');
-	background-size: cover;
+	background-size: 100%;
   	background-repeat: no-repeat;
 	margin: 0 20%;
+	height: 0;
+    padding-bottom: 74.2%;
 	
 }
 
@@ -90,11 +92,15 @@ input[type="text"]
 
 textarea:focus, input:focus{
     outline: none;
+    width: 100%;
 }
 
-#submit {
-	background: transparent;
-    border: none !important;
+.erase {
+	position: absolute;
+  	z-index: 10;
+  	left: 73%;	
+  	top: 28%;
+  	height: 23%;
 }
 
 @media screen and (max-width: 25em) {
