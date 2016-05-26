@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<title>Elle's List App</title>
@@ -10,25 +10,22 @@
 		<script src="js/jquery-2.2.3.js"></script>
 	</head>
 	<body>
-		<div class="container">
-			<section>
-				<div class ="erase">
-					<!-- <img src="images/pencil.png" id="pencil" height="100%"> -->
-					<img src="images/eraser.png" id="eraser" height="100%">
-				</div>
-				<form class="ac-custom ac-list" autocomplete="off">
-					<ol>
-						<div id="items">
-						</div>
-						<form id="newTask">
-							<input type="text" id="newInput" class="text" maxlength="39" autocomplete="off" placeholder="add a task" required/>
-      					</form>
-					<ol>
-				</form>
-			</section>
-		</div>
-		<script src="js/setEraseState.js"></script>
+		<section class="container">
+			<div class ="erase">
+				<!-- <img src="images/pencil.png" id="pencil" height="100%"> -->
+				<img src="images/eraser.png" id="eraser" height="100%">
+			</div>
+			<form class="ac-custom ac-list" autocomplete="off">
+				<ol>
+					<div id="items">
+					</div>
+					<form id="newTask">
+						<input type="text" id="newInput" class="text" maxlength="39" autocomplete="off" placeholder="add a task" required/>
+  					</form>
+				<ol>
+			</form>
+		</section>
 		<script src="js/svgcheckbx.js"></script>
-		<script src="js/insertTask.js"></script>
+		<script src="js/insert-and-erase.js"></script>
 	</body>
 </html>

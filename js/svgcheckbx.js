@@ -28,31 +28,30 @@ function controlCheckbox( el, type, svgDef ) {
 	el.parentNode.appendChild( svg );
 	el.parentNode.addEventListener('mouseenter', cursorFix);
 	el.parentNode.addEventListener('click', clickEvent);
-	el.addEventListener('change', function() {
-		if ( el.checked ) {
-			draw( el, type );
-		}
-		else {
-			reset( el );
-		}
-	} );
 }
 
-function clickEvent() {
+function clickEvent(e) {
 	if (erase == 1) {
 		$(this).remove();
 		$('#newInput').show();
 	} else {
-		$(this).children().click();
+		var el = e.currentTarget.getElementsByTagName('input')[0];
+		el.checked = !el.checked;
+		if ( el.checked ) {
+			draw( el, 'list' );
+		}
+		else {
+			reset( el );
+		}
 	}
 }
 
 function cursorFix() {
 	if (erase == 1) {
-		$(this).off().children().off().css('cursor','url(images/eraser-cursor.ico), default');
+		$(this).children().css('cursor','url(images/eraser-cursor.ico), default'); 
 	}
 	if (erase == 0) {
-		$(this).on().children().on().css('cursor','default');
+		$(this).children().css('cursor','default');
 	}
 }
 
