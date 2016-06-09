@@ -8,9 +8,10 @@ body {
 	background-image: url('../images/paper.png');
 	background-size: 100%;
   	background-repeat: no-repeat;
-	margin: 0 20%;
-	height: 0;
-    padding-bottom: 74.2%;
+	/* margin: 0 20%; */
+	margin: 0 auto;
+	width: 59em;
+	height: 74em;
 }
 
 section {
