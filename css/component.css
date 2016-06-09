@@ -69,7 +69,7 @@
 }
 
 .ac-custom input[type="checkbox"]:checked + label {
-	color: red;
+	color: #8c7373;
 } 
 
 .ac-custom input[type="checkbox"]:checked + label::before {
@@ -89,7 +89,7 @@
 }
 
 .ac-custom svg path {
-	stroke: black;
+	stroke: #c7c7d1;
 	stroke-width: 13px;
 	stroke-linecap: round;
 	stroke-linejoin: round;
